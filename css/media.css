@@ -1,0 +1,19 @@
+@media only screen and (max-width: 992px) {
+    .services_desc {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .services_desc .image_box {
+        width: 100%;
+        height: 450px;
+        background-image: url("../images/about_serv_02.png");
+        background-size: cover;
+    }
+    .services_desc .text_box {
+        width: 100%;
+    }
+    header p {
+        display: none;
+    }
+}
