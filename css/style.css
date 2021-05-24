@@ -57,6 +57,7 @@
     height: 100vh;
     width: 100%;
     margin-bottom: 82px;
+    position: relative;
 }
 .banner_about_us {
     background-image: url("../images/baner_about_us_desk_02.png");
@@ -381,4 +382,48 @@ footer {
     content:  "—";
     position: relative;
     left:     -5px;
+}
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 10px;
+}
+.owl-nav .owl-prev:before {
+    content: "\f053";
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 10px;
+}
+.owl-nav .owl-next:after {
+    content: "\f054";
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+.owl-dots {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+.owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-left: 12px;
+}
+.owl-carousel .owl-dots .owl-dot.active {
+    background-color: rgba(255, 255, 255, 1);
 }
