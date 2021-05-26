@@ -426,4 +426,6 @@ footer {
 }
 .owl-carousel .owl-dots .owl-dot.active {
     background-color: rgba(255, 255, 255, 1);
+    width: 13px;
+    height: 13px;
 }
