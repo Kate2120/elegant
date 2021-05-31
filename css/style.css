@@ -47,6 +47,30 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Bold.eot');
+    src: url('../fonts/Now-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Bold.woff2') format('woff2'),
+    url('../fonts/Now-Bold.woff') format('woff'),
+    url('../fonts/Now-Bold.ttf') format('truetype'),
+    url('../fonts/Now-Bold.svg#Now-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Now';
+    src: url('../fonts/Now-Medium.eot');
+    src: url('../fonts/Now-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Now-Medium.woff2') format('woff2'),
+    url('../fonts/Now-Medium.woff') format('woff'),
+    url('../fonts/Now-Medium.ttf') format('truetype'),
+    url('../fonts/Now-Medium.svg#Now-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 *{
     padding: 0;
     margin: 0;
@@ -144,11 +168,12 @@ p {
 .about_us p {
     margin-bottom: 168px;
 }
-.body_content a {
+.body_content button {
     display: inline-block;
     width: 238px;
     height: 57px;
     font: 14px/57px 'Open Sans';
+    background-color: white;
     font-weight: 300;
     border: 1px solid #000000;
     color: #021725;
@@ -428,4 +453,87 @@ footer {
     background-color: rgba(255, 255, 255, 1);
     width: 13px;
     height: 13px;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    width: 750px !important;
+    border-radius: 0 0 10px 10px;
+    padding: 0;
+
+
+}
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    background-color: #000000;
+    padding: 39px 0 39px 202px;
+
+    color: white;
+    font: 24px/24px 'Now';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.forgot_pass .email {
+    width: 385px;
+    height: 60px;
+    border-radius: 4px;
+    border: 1px solid #b7b7b7;
+    outline: #b7b7b7;
+    padding-left: 5px;
+}
+.forgot_pass .email_label {
+    margin-left: 32px;
+    margin-bottom: 40px;
+
+
+}
+.forgot_pass .email_label p {
+    display: inline-block;
+    width: 190px;
+    text-align: center;
+}
+.forgot_pass button, .forgot_pass a {
+    width: 527px;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 0 111px 29px;
+    border: none;
+    background-color: #b9b9b9;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font: 24px/24px 'Now';
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.forgot_pass .email_label p, .forgot_pass p{
+    color: #363636;
+    text-transform: uppercase;
+    font: 22px/22px 'Now';
+    font-weight: 500;
+}
+.or {
+    max-width: 24px;
+    height: 24px;
+    margin: 0 auto 30px;
+
+}
+.forgot_pass a {
+    background-color: #557bcc;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 166px;
+}
+.forgot_pass a::before {
+    content: "\f39e";
+    font-weight: 400;
+    font-family: "Font Awesome 5 Brands";
+}
+.ui-button.ui-corner-all.ui-widget.ui-button-icon-only.ui-dialog-titlebar-close {
+    background-color: black;
+    border-color: black;
+
+}
+.ui-button .ui-icon {
+    background-image: none;
+    color: white;
 }

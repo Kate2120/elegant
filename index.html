@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device, user-scalable, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Title</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
@@ -14,7 +16,7 @@
 <body>
 
 <header>
-    <div class="owl-carousel">
+       <div class="owl-carousel">
         <div class="banner">
             <section>
                 <a href="/" title="Home">
@@ -80,9 +82,28 @@
     <p>
         Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.
     </p>
-    <a href="/">
+    <button  id="opener">
         Read More About Us
-    </a>
+    </button>
+
+    <div id="dialog" title="FORGOT YOUR PASSWORD?" class="forgot_pass">
+        <form action="" method="post" target="_self">
+            <label class="email_label" for="email">
+                <p>ENTER YOUR<br>
+                    EMAIL</p>
+            <input class="email" type="email" name="email" id="email">
+            </label>
+            <button type="submit">
+                RESET PASSWORD
+            </button>
+        </form>
+        <div class="or">
+        <p>OR</p>
+        </div>
+        <a href="">
+            Log In Using Facebook
+        </a>
+    </div>
     <h2>
         What We Do
     </h2>
@@ -251,9 +272,33 @@
 </div>
 </footer>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
 <script src="https://kit.fontawesome.com/e5d09a4fb6.js" crossorigin="anonymous"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/script.js"></script>
+<script>
+    $( function() {
+        $( "#dialog" ).dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            }
+
+        });
+
+        $( "#opener" ).on( "click", function() {
+            $( "#dialog" ).dialog( "open" );
+        });
+
+    } );
+</script>
 
 </body>
 </html>
